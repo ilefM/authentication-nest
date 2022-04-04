@@ -1,6 +1,6 @@
 ## Authentication example in Nestjs
 
-By using the Passport library for authentication we can implement a strategy used in the Passport framework and a simple strategy would be local-strategy which use a username and password to authenticate a user
+By using the Passport library for authentication we can implement a strategy used in the Passport framework. The strategy that is used in this example is the passport-local strategy which uses a username and password to authenticate a user
 
 Routes :
 
