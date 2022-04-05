@@ -7,7 +7,14 @@ import { AuthController } from './auth.controller';
 
 @Module({
     imports: [UsersModule, PassportModule],
-    providers: [AuthService, LocalStrategy],
+    providers: [
+        {
+            provide: 'AUTH_SERVICE',
+            useClass: AuthService,
+        },
+
+        LocalStrategy,
+    ],
     controllers: [AuthController],
 })
 export class AuthModule {}
